@@ -1,0 +1,193 @@
+@import "../general";
+.Global {
+  background-color: $color-secundario;
+  width: 100%;
+  height: 100vh;
+  color: $color-claro;
+  &--Header {
+    text-align: center;
+    padding: 2rem;
+  }
+  &--info {
+    // display: none;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #fbfbfb6b;
+    border-radius: 2rem;
+    padding: 2rem;
+    img {
+      width: 40%;
+    }
+    span {
+      color: $color-oscuro;
+      font-weight: 500;
+      font-size: 1.5rem;
+      height: auto;
+    }
+    &__text {
+      width: 100%;
+      text-align: center;
+      h1 {
+        color: $color-claro;
+        font-size: 7rem;
+        font-weight: 800;
+        padding-left: 2rem;
+      }
+      h3 {
+        color: $color-claro;
+        font-size: 2rem;
+        font-weight: 300;
+      }
+    }
+  }
+  &--buscar {
+    display: flex;
+    justify-content: right;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    height: 3.4rem;
+    input {
+      width: 60%;
+      padding-left: 2rem;
+      background-color: $color-secundario;
+      border-radius: 1rem;
+      border: 2px solid $color-claro;
+      color: $color-claro;
+
+      &::placeholder {
+        color: $color-claro;
+      }
+    }
+    img {
+      width: 6%;
+      padding: 0.4rem;
+      position: absolute;
+      right: 1.3rem;
+    }
+    button {
+      width: 10%;
+      background-color: transparent;
+      border: 1px solid $color-claro;
+      border-radius: 1rem;
+      z-index: 3;
+    }
+  }
+  &--Main {
+    width: 80%;
+    height: 45%;
+
+    padding: 1rem;
+    padding-bottom: 0rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+
+    background-color: $color-claro;
+    border-radius: 1.5rem;
+    color: $color-oscuro;
+
+    &__city {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid $color-oscuro;
+      height: 22%;
+      input {
+        background-color: $color-secundario;
+        color: $color-claro;
+        width: 30%;
+        height: 50%;
+        border-radius: 1rem;
+        border: none;
+        &:hover {
+          background-color: $color-oscuro;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .Global {
+    height: 120vh;
+
+    &--Header {
+      text-align: center;
+      padding: 2rem;
+      font-size: 2rem;
+      margin-top: 2rem;
+
+    }
+    &--info {
+        // display: none;
+        width: 20%;
+        align-items: center;
+        flex-direction: column;
+        img {
+          width: 30%;
+        }
+        span {
+          font-size: 3rem;
+        }
+        &__text {
+         
+          h3 {
+            font-size: 3rem;
+          }
+        }
+      }
+    &--buscar {
+      height: 5%;
+      
+      input {
+          margin-top: 4rem;
+        width: 40%;
+        height: 80%;
+        background-color: $color-secundario;
+        color: $color-claro;
+        font-size: 2rem;
+      
+      }
+      img {
+        width: 2%;
+        padding: 0.8rem;
+        margin-top: 3.8rem;
+
+        position: absolute;
+      }
+    }
+    &--Main {
+      height: 40%;
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 1rem;
+
+
+      &__city {
+        justify-content: center;
+        flex-direction: column;
+        width: 40%;
+        border: 3px solid $color-secundario;
+        border-radius: 1rem;
+        height: 100%;
+        font-size: 2rem;
+        &:hover {
+          background-color: $color-secundario;
+          color: $color-claro;
+        }
+        input {
+          background-color: $color-claro;
+          color: $color-secundario;
+          width: 35%;
+          height: 7%;
+          font-size: 2rem;
+          &:hover {
+            color: $color-claro;
+          }
+        }
+      }
+    }
+   
+  }
+}

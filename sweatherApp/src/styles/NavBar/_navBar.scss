@@ -1,0 +1,42 @@
+@import "../general";
+
+
+.NavBar{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    background-color: $color-secundario;
+    border: 1px solid $color-claro;
+    border-radius: 1rem;
+    width: 100%;
+    height: 7%;
+    a{
+        text-decoration: none;
+
+        &:focus, &:hover, &:visited, &:link, &:active {
+            text-decoration: none;
+        }
+        &:hover{
+            background-color: $color-oscuro;
+        }
+    }
+    img{
+        height: 100%;
+        width:20%;
+        }
+}
+@media (min-width: 900px) {
+    .NavBar{
+    justify-content: space-evenly;
+
+    top: 0;
+    border-radius: 0;
+
+        height: 4%;
+        img{
+        height: 100%;
+        width: 4%;
+        }
+    }
+}

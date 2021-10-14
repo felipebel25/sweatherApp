@@ -1,0 +1,47 @@
+{
+  "name": "sweatherApp",
+  "version": "1.0.0",
+  "description": "app de react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --mode development --config webpack.config.dev.js",
+    "prod": "webpack  --mode production"
+  },
+  "keywords": [],
+  "author": "Felipe Medina <felipemedina.developer@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "clean-webpack-plugin": "*",
+    "css-loader": "^5.2.4",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.5.0",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.32.11",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^0.21.4",
+    "moment-timezone": "^0.5.33",
+    "react-moment": "^1.1.1",
+    "react-responsive": "^8.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-toggle": "^4.1.2",
+    "styled-components": "^5.3.0",
+    "terser-webpack-plugin": "^5.1.4"
+  }
+}
